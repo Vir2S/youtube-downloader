@@ -48,7 +48,6 @@ def downloader(user_choice):
             file_name = v.title
             audio_file = f"{file_name}.{audio_extension}"
             base = os.path.splitext(audio_file)[0]
-            # print(os.rename(audio_file, base + '.mp3'))
             os.rename(audio_file, base + '.mp3')
 
         print('Download complete!')
