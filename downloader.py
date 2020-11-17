@@ -4,12 +4,6 @@ import pafy
 
 # url = "https://youtu.be/JbHI1yI1Ndk"
 
-print('Want to download video or audio from YouTube? Just enter URL below...')
-source_url = input('Enter URL here: ')
-
-print('For download video choose: 1\nFor download audio choose: 2 ')
-user_choice = input('Enter your choice here: ')
-
 
 def downloader(user_choice):
 
@@ -55,6 +49,13 @@ def downloader(user_choice):
     except ValueError:
 
         print('Oops! Something wrong. Check the data')
+
+
+print('Want to download video or audio from YouTube? Just enter URL below...')
+source_url = input('Enter URL here: ')
+
+print('For download video choose: 1\nFor download audio choose: 2 ')
+user_choice = input('Enter your choice here: ')
 
 
 downloader(user_choice)
